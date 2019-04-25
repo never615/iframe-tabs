@@ -107,14 +107,14 @@
         });
 
         if (window == top) {
-            addTabs({
-                id: '_admin_dashboard',
-                title: window.home_title,
-                close: false,
-                url: window.home_uri,
-                urlType: 'absolute',
-                icon: '<i class="fa ' + window.home_icon + '"></i>'
-            });
+//            addTabs({
+//                id: '_admin_dashboard',
+//                title: window.home_title,
+//                close: false,
+//                url: window.home_uri,
+//                urlType: 'absolute',
+//                icon: '<i class="fa ' + window.home_icon + '"></i>'
+//            });
         } else {
             if (location.href == window.iframes_index) {
                 $('body').html('....');
