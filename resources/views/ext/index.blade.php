@@ -92,8 +92,6 @@
                 }
                 var span = $(this).find('span');
 
-                url = etUrlRelativePath(url);
-
                 addTabs({
                     id: url.replace(/\W/g, '_'),
                     title: span.size() ? span.text() : $(this).text().length ? $(this).text() : '*',
