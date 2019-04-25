@@ -22,8 +22,8 @@ class IframeTabs extends Extension
         if ($menu = Menu::where('uri', '/')->first()) {
             $menu->update(['uri' => 'dashboard']);
         }
-        if (!Permission::where('slug', 'tabs.dashboard')->first()) {
-            parent::createPermission('Tab-dashboard', 'tabs.dashboard', 'dashboard');
-        }
+//         if (!Permission::where('slug', 'tabs.dashboard')->first()) {
+//             parent::createPermission('Tab-dashboard', 'tabs.dashboard', 'dashboard');
+//         }
     }
 }
